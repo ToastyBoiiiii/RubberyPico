@@ -59,8 +59,7 @@ $mediaPlayer = New-Object system.windows.media.mediaplayer
 
 # Get the duration of the file
 $mediaPlayer.open("$env:temp\roll.mp3")
-Start-Sleep 5
-$duration = $mediaPlayer.NaturalDuration.TimeSpan.TotalSeconds
+Start-Sleep 1
 
 # Turn up the audio volume
 [Audio]::Volume = 1
@@ -68,5 +67,5 @@ $duration = $mediaPlayer.NaturalDuration.TimeSpan.TotalSeconds
 
 # Play the audio file
 $mediaPlayer.Play()
-Start-Sleep $duration
+Start-Sleep $mediaPlayer.NaturalDuration.TimeSpan.TotalSeconds
 $mediaPlayer.Close()
