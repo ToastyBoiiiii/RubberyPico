@@ -1,5 +1,5 @@
 # Download the .bat file into the autostart menu
-iwr -Uri 'https://raw.githubusercontent.com/ToastyBoiiiii/RubberyPico/main/AutoRoll/autostartRickRoll.bat' -OutFile "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\autostartRickRoll.bat"
+iwr -Uri 'https://raw.githubusercontent.com/ToastyBoiiiii/RubberyPico/main/AutoRoll/autostartRickRoll.bat' -OutFile "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\autostartRickRoll.bat"
 
 # Download the RickRoll-Script into a directory in the
 New-Item -Path "$($env:LOCALAPPDATA)\RickRoll" -ItemType Directory
