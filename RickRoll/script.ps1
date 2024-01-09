@@ -1,3 +1,6 @@
+# Delete run dialog history
+reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU /va /f
+
 # Define Audio API
 Add-Type -TypeDefinition @'
 using System.Runtime.InteropServices;
