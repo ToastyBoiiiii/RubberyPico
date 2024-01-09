@@ -1,1 +1,1 @@
-powershell.exe -WindowStyle hidden -File "C:\Users\hanne\AppData\Local\RickRoll\script.ps1"
+powershell.exe -WindowStyle hidden -File "%LocalAppData%\RickRoll\autoRoll.ps1"
